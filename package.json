@@ -1,0 +1,37 @@
+{
+  "name": "@cgjgh/node-red-dashboard-2-authentik-auth",
+  "version": "0.1.0",
+  "description": "Dashboard Auth with Authentik",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JH",
+  "license": "AGPL-3.0-or-later",
+  "node-red": {
+    "version": ">=3.1",
+    "plugins": {
+      "node-red-dashboard-2-authentik-auth": "index.js"
+    }
+  },
+  "keywords": [
+    "node-red",
+    "node-red-dashboard",
+    "authentik",
+    "auth",
+    "authentication"
+  ],
+  "dependencies": {
+    "@flowfuse/node-red-dashboard": "^1.10"
+  },
+  "engines": {
+    "node": ">=16.20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgjgh/node-red-dashboard-2-authentik-auth.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
