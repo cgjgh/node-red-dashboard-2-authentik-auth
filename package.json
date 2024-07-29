@@ -1,6 +1,6 @@
 {
   "name": "@cgjgh/node-red-dashboard-2-authentik-auth",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "description": "Dashboard Auth with Authentik",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,8 @@
     "node-red-dashboard",
     "authentik",
     "auth",
+    "flowfuse",
+    "dashboard",
     "authentication"
   ],
   "dependencies": {
