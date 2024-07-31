@@ -15,9 +15,9 @@ This plugin assumes that you have a running Authentik instance and that you have
 
 The proxy provider will set the appropiate headers necessary for Dashboard 2.0 to receive the user info from Authentik. 
 
-| **User Info** | **Header** |
+| **User Info** | **Header/Value** |
 |---------------|------------|
-| `provider` | `"Authentik"` |
+| `provider` | `Authentik` |
 | `host` | `host` |
 | `agent` | `user-agent` |
 | `userId` | `x-authentik-uid` |
