@@ -2,10 +2,10 @@
 
 Use [Authentik](https://goauthentik.io/) as an authentication provider for the [Node-RED Dashboard 2](https://github.com/FlowFuse/node-red-dashboard).
 
-<table align="center" style="border-collapse: collapse;">
-  <tr>
+<table align="center" style="border: none;">
+  <tr style="border: none;">
     <td style="border: none;"><img src="assets/logo.png" alt="alt text" height="200px"/></td>
-    <td style="font-size: 2em; vertical-align: middle; text-align: center; border: none;">+</td>
+    <td style="font-size: 5em; vertical-align: middle; text-align: center; border: none;">+</td>
     <td style="border: none;"><img src="assets/authentik-orange.png" alt="alt text" height="200px"/></td>
   </tr>
 </table>
