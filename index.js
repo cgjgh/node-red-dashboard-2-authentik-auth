@@ -1,19 +1,41 @@
+// function getUser(headers) {
+//   var user = {};
+//   const authentik_user = headers["x-authentik-uid"] || null;
+//   if (!authentik_user) {
+//     console.warn(`Session is not authenticated by Authentik; no user detected. See headers: ${JSON.stringify(headers)}`);
+//   } else {
+//     console.log(`Dashboard interacted with by ${authentik_user}`);
+//   }
+//   user.host = headers["host"] || null;
+//   user.agent = headers["user-agent"] || null;
+//   user.userId = authentik_user;
+//   user.name = headers["x-authentik-name"] || null;
+//   user.userName = headers["x-authentik-username"] || null;
+//   user.email = headers["x-authentik-email"] || null;
+//   user.groups = headers["x-authentik-groups"] || null;
+//   user.provider = "Authentik";
+//   return user;
+// }
+
 function getUser(headers) {
-  var user = {};
-  const authentik_user = headers["x-authentik-uid"] || null;
+  var user = {
+    host: "nodered-dashboard2.com",
+    agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0",
+    userId: "36b213236b2e163b708702848564c0194656165d28b9dd94be943d6e2ee5686e8c4",
+    name: "Admin",
+    userName: "akadmin",
+    email: "admin@authentik.com",
+    groups: "Admins|Standard Users",
+    provider: "Authentik"
+  };
+
+  const authentik_user = user.userId;
   if (!authentik_user) {
     console.warn(`Session is not authenticated by Authentik; no user detected. See headers: ${JSON.stringify(headers)}`);
   } else {
     console.log(`Dashboard interacted with by ${authentik_user}`);
   }
-  user.host = headers["host"] || null;
-  user.agent = headers["user-agent"] || null;
-  user.userId = authentik_user;
-  user.name = headers["x-authentik-name"] || null;
-  user.userName = headers["x-authentik-username"] || null;
-  user.email = headers["x-authentik-email"] || null;
-  user.groups = headers["x-authentik-groups"] || null;
-  user.provider = "Authentik";
+
   return user;
 }
 
