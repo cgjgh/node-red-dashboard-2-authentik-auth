@@ -4,7 +4,7 @@ function getUser(headers) {
   if (!authentik_user) {
     console.warn(`Session is not authenticated by Authentik; no user detected. See headers: ${JSON.stringify(headers)}`);
   } else {
-    console.log(`Dashboard interacted with by ${authentik_user}`);
+    // console.log(`Dashboard interacted with by ${authentik_user}`);
   }
   user.host = headers["host"] || null;
   user.agent = headers["user-agent"] || null;
