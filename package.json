@@ -1,6 +1,6 @@
 {
   "name": "@cgjgh/node-red-dashboard-2-authentik-auth",
-  "version": "1.2.1",
+  "version": "1.2.3",
   "description": "Dashboard Auth with Authentik",
   "main": "index.js",
   "scripts": {
